@@ -1,0 +1,11 @@
+name "cxx_standards_11_then_14"
+
+using_library "plain_leastcxx14_package"
+using_library "plain_leastcxx11_package"
+
+cxx_standard maximum_library_cxx_standard
+
+import_types_from "plain_cxx14_package/DummyLeast14.hpp"
+import_types_from "plain_cxx11_package/DummyLeast11.hpp"
+
+task_context "Task"
